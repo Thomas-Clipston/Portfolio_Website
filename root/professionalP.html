@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Practice · reflections</title>
+    <link rel="icon"  href="book_icon.jpg">
+    <link rel="stylesheet" href="styles_top.css">
+    <link rel="stylesheet" href="styles_projects.css">
+    <style>
+        /* ===== refined header & global ===== */
+        .professional-header {
+            text-align: center;
+            margin: 30px auto 20px auto;
+            padding: 20px 20px 10px;
+            max-width: 900px;
+        }
+
+                .button_location {
+            text-align: center;
+            margin: 40px 0 70px 0;
+        }
+
+        .button {
+            background: rgb(255, 139, 77);
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 14px 38px;
+            border-radius: 60px;
+            cursor: pointer;
+            box-shadow: 0 12px 20px -12px rgba(255, 139, 77, 0.6);
+            transition: background 0.2s, transform 0.2s;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .button:hover {
+            background: #e0673a;
+            transform: translateY(-3px);
+            box-shadow: 0 18px 25px -10px #e0673a;
+        }
+
+        .professional-header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 48px;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0 rgba(255, 139, 77, 0.15);
+        }
+
+        .header-underline {
+            height: 3px;
+            width: 120px;
+            background: rgb(255, 139, 77);
+            margin: 10px auto 20px auto;
+            border-radius: 4px;
+        }
+
+        .header-sub {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #4a5a6a;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(3px);
+            padding: 8px 20px;
+            border-radius: 60px;
+        }
+
+        /* ===== reflection containers ===== */
+        .reflection-wrapper {
+            max-width: 1300px;
+            margin: 2rem auto 4rem auto;
+            padding: 0 24px;
+        }
+
+        /* section style (personal / formative) */
+        .reflection-section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-weight: 400;
+            color: #1e3d4c;
+            margin: 40px 0 10px 0;
+            border-left: 8px solid rgb(255, 139, 77);
+            padding-left: 20px;
+        }
+
+        .section-description {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #2c3e50;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(2px);
+            padding: 16px 22px;
+            border-radius: 24px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,139,77,0.25);
+        }
+
+        .reflection-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+            margin-top: 10px;
+        }
+
+        /* allow three cards in formative section? but we only have one, so fine */
+        .reflection-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 24px;
+            padding: 22px 18px 28px 18px;
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reflection-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 38px -12px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .reflection-image {
+            width: 100%;
+            height: auto;
+            max-height: 240px;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 18px;
+            border: 2px solid white;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+            margin: 12px 0 18px 0;
+            background: #f0ece5;
+            display: block;
+        }
+
+        .thing-description {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: #1e2b37;
+            margin: 0 0 12px 0;
+            padding: 14px 14px;
+            background: rgba(70, 130, 200, 0.05);
+            border-left: 4px solid #2c3e50;
+            border-radius: 0 16px 16px 0;
+            font-weight: 500;
+        }
+
+        .thing-description strong {
+            color: #1e4660;
+            font-weight: 700;
+        }
+
+        .impact-label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #9b5e2e;
+            margin: 8px 0 4px 0;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .impact-label::before {
+            content: "✦";
+            font-size: 18px;
+            color: rgb(255, 139, 77);
+            font-weight: 400;
+        }
+
+        .reflection-textarea {
+            width: 100%;
+            border: 1px solid #d0d9e2;
+            border-radius: 18px;
+            padding: 14px 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background: white;
+            resize: vertical;
+            box-sizing: border-box;
+            transition: border 0.2s, box-shadow 0.2s;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .reflection-textarea:focus {
+            border-color: rgb(255, 139, 77);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255, 139, 77, 0.15), inset 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .order-badge {
+            display: inline-block;
+            background: rgba(255,139,77,0.2);
+            padding: 3px 10px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-family: monospace;
+            margin-right: 8px;
+            color: #a24d1a;
+        }
+
+        .local-hint {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: 10px;
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.7;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        @media (max-width: 800px) {
+            .reflection-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* overall reflection block (top) unchanged */
+        .overall-block {
+            margin-top: 10px; 
+            margin-bottom: 40px; 
+            background: rgba(255,255,255,0.6); 
+            backdrop-filter: blur(4px); 
+            border-radius: 28px; 
+            padding: 28px 30px; 
+            border: 1px solid rgba(255,139,77,0.3);
+        }
+    </style>
+</head>
+<body background="background.png">
+    <!-- fixed navbar unchanged -->
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commitmentK.html">Commitment to Students</a></li>
+        <li><a href="professional.html">Professional Knowledge</a></li>
+        <li><a href="professionalP.html">Professional Practice</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="ongoing.html">Ongoing Learning</a></li>
+    </ul>
+
+    <div style="height: 10px;"></div>
+
+    <!-- improved header -->
+    <div class="professional-header">
+        <h1>Professional Practice</h1>
+        <div class="header-underline"></div>
+        <div class="header-sub">Intentional Teaching · Evidence · Growth</div>
+    </div>
+
+    <div class="reflection-wrapper">
+        <!-- overall reflection block (remains above sections) -->
+
+        <!-- ===== SECTION 1: PERSONAL REFLECTIONS ===== -->
+        <div class="reflection-section">
+            <h3 class="section-title">📌 personal reflections</h3>
+            <div class="section-description">
+                These are informal, daily reflections based on classroom moments. Each one captures a specific lesson artifact — a photo, a student interaction, or a teaching moment — and the impact it had on my thinking and future practice.
+            </div>
+
+            <div class="reflection-grid">
+                <!-- reflect1.PNG card -->
+                <div class="reflection-card">
+                    <div class="thing-description">
+                        <span class="order-badge">① the thing</span> <strong>minds‑on activity</strong><br>
+                        This image captures students working through the minds‑on portion of the lesson. Some hesitation is visible at the start, but the room shows focus during action/consolidation.
+                    </div>
+                    <img src="reflect1.PNG" alt="Reflection from lesson 1 – minds-on activity" class="reflection-image" onerror="this.src='https://via.placeholder.com/600x340/fbe9dc/ff8b4d?text=reflect1.PNG+minds-on'">
+                    <label for="reflection1" class="impact-label">③ impact · what it meant for me</label>
+                    <textarea id="reflection1" class="reflection-textarea" rows="5">Students had a hard time starting the minds on activity, in the future I will give more detailed and clear instructions to follow. The students took part in the action as well as the consolidation and made meaningful attempts to get them done.</textarea>
+                </div>
+
+                <!-- reflect2.PNG card -->
+                <div class="reflection-card">
+                    <div class="thing-description">
+                        <span class="order-badge">① the thing</span> <strong>chapter discussion & vocabulary</strong><br>
+                        A snapshot during a shared chapter reading. Students are actively participating, raising ideas. The image highlights engagement and potential for deeper questioning.
+                    </div>
+                    <img src="reflect2.PNG" alt="Reflection from lesson 2 – chapter discussion" class="reflection-image" onerror="this.src='https://via.placeholder.com/600x340/fbe9dc/ff8b4d?text=reflect2.PNG+discussion'">
+                    <label for="reflection2" class="impact-label">③ impact · what it meant for me</label>
+                    <textarea id="reflection2" class="reflection-textarea" rows="5">Students engaged in the lesson well and actively participated in the different sections of the lesson. In the future when I stop to discuss aspects of the chapter, I want to give more opened ended questions to further engagement. I would also like to focus more on vocabulary with students.</textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SECTION 2: FORMATIVE ASSESSMENT ===== -->
+        <div class="reflection-section">
+            <h3 class="section-title">📋 formative assessment</h3>
+            <div class="section-description">
+                Formal feedback from my associate teacher, captured on the official practicum form. This type of artifact provides structured, professional insights into my teaching strengths and areas for growth, based on observation and discussion.
+            </div>
+            <div style="display: flex; justify-content: flex-start; width: 100%;">
+                <!-- we reuse reflection-card but limit width for elegance (max 650px) -->
+                <div class="reflection-card" style=" width: 100%;">
+                    <div class="thing-description">
+                        <span class="order-badge">① the thing</span> <strong>Formative Practicum Assessment</strong><br>
+                        Mid-block feedback from associate teacher. Documents strengths in planning, relationships, and next steps toward responsive teaching using student data.
+                    </div>
+                    <img src="form.png" alt="Formative Practicum Assessment form" class="reflection-image" onerror="this.src='https://via.placeholder.com/600x340/fbe9dc/ff8b4d?text=form.png+assessment+feedback'">
+                    <label for="reflection3" class="impact-label">③ impact · what it meant for me</label>
+                    <textarea id="reflection3" class="reflection-textarea" rows="5">This formal feedback affirmed my confidence in lesson delivery and relationship building, while clearly pointing to a growth edge: using student work/data to plan more responsively. It motivates me to collaborate with my AT on assessment analysis before planning the next lesson cycle.</textarea>
+                </div>
+            </div>
+            <!-- optional hint that it's a single artifact -->
+            <div style="margin-top: 16px; font-style: italic; color: #4a5a6a;">(one formative assessment artifact currently displayed)</div>
+        </div>
+
+        <!-- small footnote -->
+        <div style="margin-top: 36px; text-align: center; font-family: Arial, Helvetica, sans-serif; color: #4f5f6f; font-size: 14px; opacity: 0.7;">
+            ⬇️ each entry follows: thing · artifact · impact — organised by reflection type.
+        </div>
+    </div>
+
+
+    <div class="button_location">
+        <button class="button" type="button" onclick="window.scrollTo(0,0);">
+            Back to Top
+        </button>
+    </div>
+</body>
+</html>
