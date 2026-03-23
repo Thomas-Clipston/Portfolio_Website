@@ -1,0 +1,42 @@
+.title {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.body_main_header {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.body_main {
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 700px;
+    margin: 15px auto 40px auto;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+.images {
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    padding: 10px 10px;
+}
+
+.button_location {
+    text-align: center;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    
+
+}
