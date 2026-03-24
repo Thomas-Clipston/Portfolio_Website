@@ -69,7 +69,7 @@ html, body {
     color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
-    margin: 120px 20px 0 20px; /* auto spacing instead of fixed left */
+    margin: 40px 20px 0 20px; /* auto spacing instead of fixed left */
     max-width: 600px;
 }
 
