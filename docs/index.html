@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thomas Clipston · Professional Portfolio</title>
+    <link rel="icon" href="book_icon.jpg">
+    <link rel="stylesheet" href="styles_top.css">
+    <link rel="stylesheet" href="styles_projects.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1e2b37;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER SECTION ===== */
+        .header-section {
+            max-width: 1200px;
+            margin: 60px auto 40px auto;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(6px);
+            border-radius: 48px;
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+
+        .header-text {
+            flex: 1 1 350px;
+            min-width: 280px;
+        }
+
+        .intro {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .Name {
+            font-size: 56px;
+            color: #1e3d4c;
+            margin-bottom: 24px;
+            border-bottom: 3px solid rgb(255,139,77);
+            padding-bottom: 15px;
+            width: fit-content;
+        }
+
+        .about_me_header {
+            font-size: 28px;
+            margin: 30px 0 10px 0;
+        }
+
+        .about_me_body {
+            font-size: 17px;
+            max-width: 550px;
+            background: rgba(255,255,255,0.4);
+            padding: 18px 22px;
+            border-radius: 28px;
+            border-left: 6px solid rgb(255,139,77);
+        }
+
+        .roundimage {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            box-shadow: 0 25px 40px -10px rgba(0,0,0,0.3);
+            border: 4px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .roundimage:hover {
+            transform: scale(1.02) rotate(1deg);
+        }
+
+        /* ===== WHO SECTION ===== */
+        .who-section {
+            max-width: 1200px;
+            margin: 30px auto 40px auto;
+            padding: 0 30px;
+        }
+
+        .title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title u {
+            border-bottom: 4px solid rgb(255,139,77);
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .who-card {
+            flex: 1 1 280px;
+            max-width: 350px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(8px);
+            border-radius: 32px;
+            padding: 28px 22px;
+            box-shadow: 0 20px 30px -8px rgba(0,0,0,0.2);
+            transition: all 0.25s ease;
+            text-align: center;
+        }
+
+        .who-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 28px 38px -12px rgba(255,139,77,0.3);
+        }
+
+        .body_main_header {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(255,139,77,0.4);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .body_main {
+            font-size: 16px;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        /* ===== FULL WIDTH CARD ===== */
+        .full-width-card {
+            flex: 1 1 100%;
+            max-width: 100%;
+            padding: 40px;
+        }
+
+        /* ===== BUTTON ===== */
+        .button_location {
+            text-align: center;
+            margin: 40px 0 70px 0;
+        }
+
+        .button {
+            background: rgb(255,139,77);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 14px 38px;
+            border-radius: 60px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="commitmentK.html">Commitment to Students</a></li>
+    <li><a href="professional.html">Professional Knowledge</a></li>
+    <li><a href="professionalP.html">Professional Practice</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="ongoing.html">Ongoing Learning</a></li>
+    <li><a href="growth.html">Professional Growth</a></li>
+</ul>
+
+<!-- HEADER -->
+<div class="header-section">
+    <div class="header-text">
+        <p class="intro">Bachelor of Education Student</p>
+        <h1 class="Name">Thomas Clipston</h1>
+        <h2 class="about_me_header">About Me</h2>
+        <p class="about_me_body">
+            Hello! My name is Thomas Clipston, and I am currently a first-year Bachelor of Education student at
+            Wilfrid Laurier University. I have an honours degree in computer science from Wilfred Laurier University.
+            I enjoy learning new things and developing skills that I can bring into the classroom to support and 
+            inspire my students.
+        </p>
+    </div>
+    <img class="roundimage" src="Photo_of_me.jpg" alt="Photo of Thomas Clipston">
+</div>
+
+<!-- WHO AM I -->
+<section class="who-section">
+    <h1 class="title"><u>Who Am I?</u></h1>
+
+    <div class="card-container">
+
+        <div class="who-card">
+            <p class="body_main_header">Passionate Learner</p>
+            <p class="body_main">
+                    I am deeply committed to continuous learning, both as an educator and as a lifelong learner.
+                    I actively explore new teaching strategies and strengthen my own academic foundations to better
+                    support my students. For example, I regularly work to enhance my mathematics skills so I can teach
+                    with confidence and clarity. I also enjoy learning new coding techniques, which allows me to
+                    introduce students to problem-solving and computational thinking in meaningful ways.
+            </p>
+        </div>
+
+        <div class="who-card">
+            <p class="body_main_header">Proud Educator</p>
+            <p class="body_main">
+                    I take great pride in supporting students throughout their learning journeys and helping them build
+                    confidence, skills, and a love of learning. I believe that knowledge is one of the greatest gifts an
+                    educator can offer. As I move toward a full-time teaching role, I aspire to provide additional support,
+                    such as offering extra help during lunch hours for students who may need it. I take great pride when a lesson
+                    goes well and love seeing my students reach their potentials.
+            </p>
+        </div>
+
+        <div class="who-card">
+            <p class="body_main_header">Open to New Ideas</p>
+            <p class="body_main">
+                    I am always open to new ideas and perspectives from students, colleagues, and school leadership.
+                    I actively seek feedback and reflect on my teaching practice to improve how my classroom operates.
+                    I also participate in professional learning opportunities and seminars to further develop my
+                    academic understanding and teaching skills.
+            </p>
+        </div>
+
+        <!-- FULL WIDTH PHILOSOPHY -->
+        <div class="who-card full-width-card">
+            <p class="body_main_header">Teaching Philosophy</p>
+            <p class="body_main">
+                Throughout my experiences in education, I have begun to develop a mindset that reflects the role and 
+                responsibilities of a teacher. I believe that teaching is not only about delivering content, but about 
+                creating an environment where students feel supported, valued, and capable of success.
+                <br><br>
+                I strive to approach each lesson with intentionality, adapting my instruction to meet the diverse needs 
+                of my students while encouraging curiosity and critical thinking. I recognize the importance of reflection 
+                in my practice, and I continuously work to grow by learning from my experiences, my students, and my peers.
+                <br><br>
+                As I continue my journey in education, I am committed to building a classroom culture that fosters respect, 
+                engagement, and a genuine love of learning, while continuing to shape my identity as an effective and 
+                thoughtful educator.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BUTTON -->
+<div class="button_location">
+    <button class="button" onclick="window.scrollTo(0,0);">Back to Top</button>
+</div>
+
+</body>
+</html>
