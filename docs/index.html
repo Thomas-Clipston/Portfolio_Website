@@ -170,6 +170,26 @@
             cursor: pointer;
         }
 
+        .fun-photo {
+            width: 240px;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .philosophy-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .philosophy-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
     </style>
 </head>
 
@@ -240,9 +260,14 @@
             </p>
         </div>
 
-        <!-- FULL WIDTH PHILOSOPHY -->
-        <div class="who-card full-width-card">
-            <p class="body_main_header">Teaching Philosophy</p>
+        
+<div class="who-card full-width-card">
+    <p class="body_main_header">Teaching Philosophy</p>
+
+    <div class="philosophy-content">
+        <img src="fun_photo.jpg" alt="Fun photo of me" class="fun-photo">
+
+        <div class="philosophy-text">
             <p class="body_main">
                 Throughout my experiences in education, I have begun to develop a mindset that reflects the role and 
                 responsibilities of a teacher. I believe that teaching is not only about delivering content, but about 
@@ -257,8 +282,8 @@
                 thoughtful educator.
             </p>
         </div>
-
     </div>
+</div>
 </section>
 
 <!-- BUTTON -->
