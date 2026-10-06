@@ -1,0 +1,8 @@
+Sun Dial Instructions
+---------------------
+1. create sun dial with triangle and circle
+2. Put a piece of pencil to middle of circle
+3. attach the string to pencil
+4. Start the flashlight directly south and mark the shadow - this will be 12am
+5. The students will move the flashlight 15 degrees to the right this will be 11am
+6. Mark every hour of the day following this method
